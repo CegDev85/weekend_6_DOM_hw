@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Super Warrior Stats</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="name" class="primary">Name</label>
+          <input type="text" id="name" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="special-attack" class="primary">Special Attack</label>
+          <input type="text" id="special-attack" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="fighting-style" class="primary">Fighting Style</label>
+          <select id="fighting-style">
+            <option value="" disabled selected></option>
+            <option value="Ground and Pound">Ground and Pound</option>
+            <option value="Arial Attacker">Arial Attacker</option>
+            <option value="Weapons Specialist">Weapons Specialist</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>Fighter Bio</h1>
+    <ul id="fighter-bio"></ul>
+  </body>
+</html>

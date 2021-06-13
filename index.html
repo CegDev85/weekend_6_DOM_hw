@@ -37,9 +37,25 @@
       <input type="submit" value="Add Fighter"/>
     </form>
 
+   <div class="outfit">
+       <form id="outfit-choice">
+           <label for="outfit" class="primary">Outfit Choice</label>
+           <select name="outfit" id="outfit">
+               <option value="" disabled selected></option>
+               <option value="postman">60's Postman</option>
+               <option value="bodypaint">Body Paint only</option>
+           </select>
+           <input type="submit" value="Dress Fighter">
+       </form>
+   </div>
+
     <button id="delete-all">Empty Roster</button>
 
     <h1>Assemble Your Team</h1>
     <ul id="assemble-your-team"></ul>
+
+    <h2>Fighter Outfit</h2>
+    <ul id="fighter-outfit"></ul>
+    <button id="delete-outfit">Delete Outfit Choice</button>
   </body>
 </html>

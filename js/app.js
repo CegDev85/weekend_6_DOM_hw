@@ -69,9 +69,11 @@ const createFighterOutfitChoiceItem = function (form) {
     const fighterOutfitItem = document.createElement('li');
     fighterOutfitItem.classList.add('fighter-outfit')
 
-    const choice = document.createElement('h2');
+    const choice = document.createElement('p');
     choice.textContent = form.outfit.value;
     fighterOutfitItem.appendChild(choice)
 
-    return fighterOutfitItem
+    return fighterOutfitItem;
 }
+
+
